@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "1cdcd6e1-dce1-4a98-9ff5-aece12bbe3d5",
+		"name": "MICROSERVICIO PRUEBAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12803659"
+	},
+	"item": [
+		{
+			"name": "Microservicio Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "adsa",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tarjeta\": \"0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atm/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Login Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tarjeta\": \"0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atm/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Extraer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tarjeta\": \"0001\",\r\n    \"cuenta\": \"0001\",\r\n    \"importe\": 809809,\r\n    \"cbu\": \"0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atm/extraer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"extraer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Depositar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tarjeta\": \"227786322\",\r\n    \"cuenta\": \"82348\",\r\n    \"importe\": 50,\r\n    \"cbu\": \"322778632\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/atm/depositar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"depositar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/atm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Saldo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/atm/saldo?tarjeta=324234234&cuenta=324234",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"saldo"
+					],
+					"query": [
+						{
+							"key": "tarjeta",
+							"value": "324234234"
+						},
+						{
+							"key": "cuenta",
+							"value": "324234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Microservicio Registros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/atm/registros",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"atm",
+						"registros"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
